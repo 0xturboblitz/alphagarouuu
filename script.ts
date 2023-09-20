@@ -73,8 +73,8 @@ ANSWER: "<your-answer>"
 `
 
   const completion = await openai.chat.completions.create({
-    model: "gpt-3.5-turbo",
-    // model: "gpt-4",
+    // model: "gpt-3.5-turbo",
+    model: "gpt-4",
     messages: [
       {
         role: "system",
@@ -110,36 +110,6 @@ async function runGame(gameNumber: number) {
     },
     {
       name: 'Chris',
-      role: 'villager',
-      votes: 0
-    },
-    {
-      name: 'Florent',
-      role: 'villager',
-      votes: 0
-    },
-    {
-      name: 'Léo',
-      role: 'werewolf',
-      votes: 0
-    },
-    {
-      name: 'Quentin',
-      role: 'villager',
-      votes: 0
-    },
-    {
-      name: 'Charbel',
-      role: 'werewolf',
-      votes: 0
-    },
-    {
-      name: 'Sam',
-      role: 'villager',
-      votes: 0
-    },
-    {
-      name: 'Greg',
       role: 'villager',
       votes: 0
     },
@@ -252,43 +222,13 @@ async function runGame(gameNumber: number) {
       role: 'villager',
       votes: 0
     },
-    {
-      name: 'Florent',
-      role: 'villager',
-      votes: 0
-    },
-    {
-      name: 'Léo',
-      role: 'werewolf',
-      votes: 0
-    },
-    {
-      name: 'Quentin',
-      role: 'villager',
-      votes: 0
-    },
-    {
-      name: 'Charbel',
-      role: 'werewolf',
-      votes: 0
-    },
-    {
-      name: 'Sam',
-      role: 'villager',
-      votes: 0
-    },
-    {
-      name: 'Greg',
-      role: 'villager',
-      votes: 0
-    },
   ]
 }
 
 async function main() {
   let tasks: any = []
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 2; i++) {
     tasks.push(runGame(i))
   }
 
