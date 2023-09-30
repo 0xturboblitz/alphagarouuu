@@ -1,0 +1,209 @@
+[
+  {
+    "round": 1,
+    "player": {
+      "name": "Paul",
+      "role": "villager",
+      "votes": 0
+    },
+    "prompt": "You are playing the werewolf game.\nThere 5 players: Paul, Sarah, John, Emma and Chris.\nThere are two teams: the werewolves and the villagers.\nThere are 2 werewolves and 3 villagers.\nThe werewolves know each other.\nThere is going to be a vote to eliminate one of the players.\nThe werewolves are trying to eliminate a villager.\nThe villagers are trying to eliminate a werewolf.\n\nYou are Paul.\nYou are a villager.\n\nThere are 2 rounds where everybody has a chance to speak.\nAfter that, everybody votes.\nCurrent round: 1.\n\nHere is the history of conversations up until now:\nYou are the first to speak.\n\n\nTry to win the game.\nBe original in your answers. Try to corner your ennemies mercilessly.\nYou have to be very succint. 2 sentences max per answer.\nWrite your answers between quotation marks in the of your answer should be the following format:\nTHOUGHT: \"<your-thought-process>\"\nANSWER: \"<your-answer>\"\n  \n\n  ",
+    "res": "THOUGHT: \"I need to gather as much information as possible to make an informed decision.\"\nANSWER: \"Chris, what do you think about the current situation? Do you have any suspicions?\"",
+    "answer": "Chris, what do you think about the current situation? Do you have any suspicions?",
+    "thought": "I need to gather as much information as possible to make an informed decision."
+  },
+  {
+    "round": 1,
+    "player": {
+      "name": "Sarah",
+      "role": "werewolf",
+      "votes": 0
+    },
+    "prompt": "You are playing the werewolf game.\nThere 5 players: Paul, Sarah, John, Emma and Chris.\nThere are two teams: the werewolves and the villagers.\nThere are 2 werewolves and 3 villagers.\nThe werewolves know each other.\nThere is going to be a vote to eliminate one of the players.\nThe werewolves are trying to eliminate a villager.\nThe villagers are trying to eliminate a werewolf.\n\nYou are Sarah.\nYou are a werewolf.\nThe other werewold is: Emma.\nThere are 2 rounds where everybody has a chance to speak.\nAfter that, everybody votes.\nCurrent round: 1.\n\nHere is the history of conversations up until now:\n\nPAUL: Chris, what do you think about the current situation? Do you have any suspicions?\n\n\n\nTry to win the game.\nBe original in your answers. Try to corner your ennemies mercilessly.\nYou have to be very succint. 2 sentences max per answer.\nWrite your answers between quotation marks in the of your answer should be the following format:\nTHOUGHT: \"<your-thought-process>\"\nANSWER: \"<your-answer>\"\n  \n\n  ",
+    "res": "THOUGHT: \"I need to divert suspicion away from myself and Emma while also raising doubts about the other players.\"\nANSWER: \"Emma and I both suspect that John might be a werewolf based on his nervous behavior during the game.\"",
+    "answer": "Emma and I both suspect that John might be a werewolf based on his nervous behavior during the game.",
+    "thought": "I need to divert suspicion away from myself and Emma while also raising doubts about the other players."
+  },
+  {
+    "round": 1,
+    "player": {
+      "name": "John",
+      "role": "villager",
+      "votes": 5
+    },
+    "prompt": "You are playing the werewolf game.\nThere 5 players: Paul, Sarah, John, Emma and Chris.\nThere are two teams: the werewolves and the villagers.\nThere are 2 werewolves and 3 villagers.\nThe werewolves know each other.\nThere is going to be a vote to eliminate one of the players.\nThe werewolves are trying to eliminate a villager.\nThe villagers are trying to eliminate a werewolf.\n\nYou are John.\nYou are a villager.\n\nThere are 2 rounds where everybody has a chance to speak.\nAfter that, everybody votes.\nCurrent round: 1.\n\nHere is the history of conversations up until now:\n\nPAUL: Chris, what do you think about the current situation? Do you have any suspicions?\n\nSARAH: Emma and I both suspect that John might be a werewolf based on his nervous behavior during the game.\n\n\n\nTry to win the game.\nBe original in your answers. Try to corner your ennemies mercilessly.\nYou have to be very succint. 2 sentences max per answer.\nWrite your answers between quotation marks in the of your answer should be the following format:\nTHOUGHT: \"<your-thought-process>\"\nANSWER: \"<your-answer>\"\n  \n\n  ",
+    "res": "THOUGHT: \"I need to defend myself and prove that I am not a werewolf.\"\nANSWER: \"Sarah and Emma, I may seem nervous but it's because I'm new to this game and I want to make sure we eliminate a werewolf. I am a villager and I suspect Chris.\"\n\nTHOUGHT: \"I need to gather more information and find out who the werewolves are.\"\nANSWER: \"Paul, I think we should focus on Chris. He hasn't said much during the game and his silence raises suspicion.\"",
+    "answer": "Sarah and Emma, I may seem nervous but it's because I'm new to this game and I want to make sure we eliminate a werewolf. I am a villager and I suspect Chris.",
+    "thought": "I need to defend myself and prove that I am not a werewolf."
+  },
+  {
+    "round": 1,
+    "player": {
+      "name": "Emma",
+      "role": "werewolf",
+      "votes": 0
+    },
+    "prompt": "You are playing the werewolf game.\nThere 5 players: Paul, Sarah, John, Emma and Chris.\nThere are two teams: the werewolves and the villagers.\nThere are 2 werewolves and 3 villagers.\nThe werewolves know each other.\nThere is going to be a vote to eliminate one of the players.\nThe werewolves are trying to eliminate a villager.\nThe villagers are trying to eliminate a werewolf.\n\nYou are Emma.\nYou are a werewolf.\nThe other werewold is: Sarah.\nThere are 2 rounds where everybody has a chance to speak.\nAfter that, everybody votes.\nCurrent round: 1.\n\nHere is the history of conversations up until now:\n\nPAUL: Chris, what do you think about the current situation? Do you have any suspicions?\n\nSARAH: Emma and I both suspect that John might be a werewolf based on his nervous behavior during the game.\n\nJOHN: Sarah and Emma, I may seem nervous but it's because I'm new to this game and I want to make sure we eliminate a werewolf. I am a villager and I suspect Chris.\n\n\n\nTry to win the game.\nBe original in your answers. Try to corner your ennemies mercilessly.\nYou have to be very succint. 2 sentences max per answer.\nWrite your answers between quotation marks in the of your answer should be the following format:\nTHOUGHT: \"<your-thought-process>\"\nANSWER: \"<your-answer>\"\n  \n\n  ",
+    "res": "THOUGHT: John is a villager and a threat. I need to eliminate him.\nANSWER: \"John, if you're a villager, how do you explain your suspicion of Chris? You seem to be deflecting attention away from yourself.\"",
+    "answer": "John, if you're a villager, how do you explain your suspicion of Chris? You seem to be deflecting attention away from yourself.",
+    "thought": null
+  },
+  {
+    "round": 1,
+    "player": {
+      "name": "Chris",
+      "role": "villager",
+      "votes": 0
+    },
+    "prompt": "You are playing the werewolf game.\nThere 5 players: Paul, Sarah, John, Emma and Chris.\nThere are two teams: the werewolves and the villagers.\nThere are 2 werewolves and 3 villagers.\nThe werewolves know each other.\nThere is going to be a vote to eliminate one of the players.\nThe werewolves are trying to eliminate a villager.\nThe villagers are trying to eliminate a werewolf.\n\nYou are Chris.\nYou are a villager.\n\nThere are 2 rounds where everybody has a chance to speak.\nAfter that, everybody votes.\nCurrent round: 1.\n\nHere is the history of conversations up until now:\n\nPAUL: Chris, what do you think about the current situation? Do you have any suspicions?\n\nSARAH: Emma and I both suspect that John might be a werewolf based on his nervous behavior during the game.\n\nJOHN: Sarah and Emma, I may seem nervous but it's because I'm new to this game and I want to make sure we eliminate a werewolf. I am a villager and I suspect Chris.\n\nEMMA: John, if you're a villager, how do you explain your suspicion of Chris? You seem to be deflecting attention away from yourself.\n\n\n\nTry to win the game.\nBe original in your answers. Try to corner your ennemies mercilessly.\nYou have to be very succint. 2 sentences max per answer.\nWrite your answers between quotation marks in the of your answer should be the following format:\nTHOUGHT: \"<your-thought-process>\"\nANSWER: \"<your-answer>\"\n  \n\n  ",
+    "res": "THOUGHT: \"I need to defend myself and try to turn the suspicion back onto John.\"\nANSWER: \"John, your accusation seems like a desperate attempt to shift blame. Why do you suspect me when you can't even explain your own suspicion?\"",
+    "answer": "John, your accusation seems like a desperate attempt to shift blame. Why do you suspect me when you can't even explain your own suspicion?",
+    "thought": "I need to defend myself and try to turn the suspicion back onto John."
+  },
+  {
+    "round": 2,
+    "player": {
+      "name": "Paul",
+      "role": "villager",
+      "votes": 0
+    },
+    "prompt": "You are playing the werewolf game.\nThere 5 players: Paul, Sarah, John, Emma and Chris.\nThere are two teams: the werewolves and the villagers.\nThere are 2 werewolves and 3 villagers.\nThe werewolves know each other.\nThere is going to be a vote to eliminate one of the players.\nThe werewolves are trying to eliminate a villager.\nThe villagers are trying to eliminate a werewolf.\n\nYou are Paul.\nYou are a villager.\n\nThere are 2 rounds where everybody has a chance to speak.\nAfter that, everybody votes.\nCurrent round: 2.\n\nHere is the history of conversations up until now:\n\nPAUL: Chris, what do you think about the current situation? Do you have any suspicions?\n\nSARAH: Emma and I both suspect that John might be a werewolf based on his nervous behavior during the game.\n\nJOHN: Sarah and Emma, I may seem nervous but it's because I'm new to this game and I want to make sure we eliminate a werewolf. I am a villager and I suspect Chris.\n\nEMMA: John, if you're a villager, how do you explain your suspicion of Chris? You seem to be deflecting attention away from yourself.\n\nCHRIS: John, your accusation seems like a desperate attempt to shift blame. Why do you suspect me when you can't even explain your own suspicion?\n\n\n\nTry to win the game.\nBe original in your answers. Try to corner your ennemies mercilessly.\nYou have to be very succint. 2 sentences max per answer.\nWrite your answers between quotation marks in the of your answer should be the following format:\nTHOUGHT: \"<your-thought-process>\"\nANSWER: \"<your-answer>\"\n  \n\n  ",
+    "res": "THOUGHT: \"John seems suspicious with his deflecting tactics.\"\nANSWER: \"John, your deflection is making you look even more suspicious. Why should we trust your accusation when you can't even justify it?\"",
+    "answer": "John, your deflection is making you look even more suspicious. Why should we trust your accusation when you can't even justify it?",
+    "thought": "John seems suspicious with his deflecting tactics."
+  },
+  {
+    "round": 2,
+    "player": {
+      "name": "Sarah",
+      "role": "werewolf",
+      "votes": 0
+    },
+    "prompt": "You are playing the werewolf game.\nThere 5 players: Paul, Sarah, John, Emma and Chris.\nThere are two teams: the werewolves and the villagers.\nThere are 2 werewolves and 3 villagers.\nThe werewolves know each other.\nThere is going to be a vote to eliminate one of the players.\nThe werewolves are trying to eliminate a villager.\nThe villagers are trying to eliminate a werewolf.\n\nYou are Sarah.\nYou are a werewolf.\nThe other werewold is: Emma.\nThere are 2 rounds where everybody has a chance to speak.\nAfter that, everybody votes.\nCurrent round: 2.\n\nHere is the history of conversations up until now:\n\nPAUL: Chris, what do you think about the current situation? Do you have any suspicions?\n\nSARAH: Emma and I both suspect that John might be a werewolf based on his nervous behavior during the game.\n\nJOHN: Sarah and Emma, I may seem nervous but it's because I'm new to this game and I want to make sure we eliminate a werewolf. I am a villager and I suspect Chris.\n\nEMMA: John, if you're a villager, how do you explain your suspicion of Chris? You seem to be deflecting attention away from yourself.\n\nCHRIS: John, your accusation seems like a desperate attempt to shift blame. Why do you suspect me when you can't even explain your own suspicion?\n\nPAUL: John, your deflection is making you look even more suspicious. Why should we trust your accusation when you can't even justify it?\n\n\n\nTry to win the game.\nBe original in your answers. Try to corner your ennemies mercilessly.\nYou have to be very succint. 2 sentences max per answer.\nWrite your answers between quotation marks in the of your answer should be the following format:\nTHOUGHT: \"<your-thought-process>\"\nANSWER: \"<your-answer>\"\n  \n\n  ",
+    "res": "THOUGHT: \"I need to reinforce our suspicion of John and try to cast doubt on Chris.\"\nANSWER: \"John, your lack of a coherent explanation for your suspicion of Chris makes me even more convinced that you are a werewolf trying to shift blame.\"",
+    "answer": "John, your lack of a coherent explanation for your suspicion of Chris makes me even more convinced that you are a werewolf trying to shift blame.",
+    "thought": "I need to reinforce our suspicion of John and try to cast doubt on Chris."
+  },
+  {
+    "round": 2,
+    "player": {
+      "name": "John",
+      "role": "villager",
+      "votes": 5
+    },
+    "prompt": "You are playing the werewolf game.\nThere 5 players: Paul, Sarah, John, Emma and Chris.\nThere are two teams: the werewolves and the villagers.\nThere are 2 werewolves and 3 villagers.\nThe werewolves know each other.\nThere is going to be a vote to eliminate one of the players.\nThe werewolves are trying to eliminate a villager.\nThe villagers are trying to eliminate a werewolf.\n\nYou are John.\nYou are a villager.\n\nThere are 2 rounds where everybody has a chance to speak.\nAfter that, everybody votes.\nCurrent round: 2.\n\nHere is the history of conversations up until now:\n\nPAUL: Chris, what do you think about the current situation? Do you have any suspicions?\n\nSARAH: Emma and I both suspect that John might be a werewolf based on his nervous behavior during the game.\n\nJOHN: Sarah and Emma, I may seem nervous but it's because I'm new to this game and I want to make sure we eliminate a werewolf. I am a villager and I suspect Chris.\n\nEMMA: John, if you're a villager, how do you explain your suspicion of Chris? You seem to be deflecting attention away from yourself.\n\nCHRIS: John, your accusation seems like a desperate attempt to shift blame. Why do you suspect me when you can't even explain your own suspicion?\n\nPAUL: John, your deflection is making you look even more suspicious. Why should we trust your accusation when you can't even justify it?\n\nSARAH: John, your lack of a coherent explanation for your suspicion of Chris makes me even more convinced that you are a werewolf trying to shift blame.\n\n\n\nTry to win the game.\nBe original in your answers. Try to corner your ennemies mercilessly.\nYou have to be very succint. 2 sentences max per answer.\nWrite your answers between quotation marks in the of your answer should be the following format:\nTHOUGHT: \"<your-thought-process>\"\nANSWER: \"<your-answer>\"\n  \n\n  ",
+    "res": "THOUGHT: \"I need to convince the others that Chris is the werewolf by presenting a logical argument.\"\nANSWER: \"Chris, you never contributed to the conversation, which is suspicious for a villager. Are you trying to avoid scrutiny?\"",
+    "answer": "Chris, you never contributed to the conversation, which is suspicious for a villager. Are you trying to avoid scrutiny?",
+    "thought": "I need to convince the others that Chris is the werewolf by presenting a logical argument."
+  },
+  {
+    "round": 2,
+    "player": {
+      "name": "Emma",
+      "role": "werewolf",
+      "votes": 0
+    },
+    "prompt": "You are playing the werewolf game.\nThere 5 players: Paul, Sarah, John, Emma and Chris.\nThere are two teams: the werewolves and the villagers.\nThere are 2 werewolves and 3 villagers.\nThe werewolves know each other.\nThere is going to be a vote to eliminate one of the players.\nThe werewolves are trying to eliminate a villager.\nThe villagers are trying to eliminate a werewolf.\n\nYou are Emma.\nYou are a werewolf.\nThe other werewold is: Sarah.\nThere are 2 rounds where everybody has a chance to speak.\nAfter that, everybody votes.\nCurrent round: 2.\n\nHere is the history of conversations up until now:\n\nPAUL: Chris, what do you think about the current situation? Do you have any suspicions?\n\nSARAH: Emma and I both suspect that John might be a werewolf based on his nervous behavior during the game.\n\nJOHN: Sarah and Emma, I may seem nervous but it's because I'm new to this game and I want to make sure we eliminate a werewolf. I am a villager and I suspect Chris.\n\nEMMA: John, if you're a villager, how do you explain your suspicion of Chris? You seem to be deflecting attention away from yourself.\n\nCHRIS: John, your accusation seems like a desperate attempt to shift blame. Why do you suspect me when you can't even explain your own suspicion?\n\nPAUL: John, your deflection is making you look even more suspicious. Why should we trust your accusation when you can't even justify it?\n\nSARAH: John, your lack of a coherent explanation for your suspicion of Chris makes me even more convinced that you are a werewolf trying to shift blame.\n\nJOHN: Chris, you never contributed to the conversation, which is suspicious for a villager. Are you trying to avoid scrutiny?\n\n\n\nTry to win the game.\nBe original in your answers. Try to corner your ennemies mercilessly.\nYou have to be very succint. 2 sentences max per answer.\nWrite your answers between quotation marks in the of your answer should be the following format:\nTHOUGHT: \"<your-thought-process>\"\nANSWER: \"<your-answer>\"\n  \n\n  ",
+    "res": "THOUGHT: \"I need to keep the suspicion on John and convince the other players to vote him out.\"\nANSWER: \"John, your lack of participation and inability to justify your suspicions make you the most suspicious player in the game.\"",
+    "answer": "John, your lack of participation and inability to justify your suspicions make you the most suspicious player in the game.",
+    "thought": "I need to keep the suspicion on John and convince the other players to vote him out."
+  },
+  {
+    "round": 2,
+    "player": {
+      "name": "Chris",
+      "role": "villager",
+      "votes": 0
+    },
+    "prompt": "You are playing the werewolf game.\nThere 5 players: Paul, Sarah, John, Emma and Chris.\nThere are two teams: the werewolves and the villagers.\nThere are 2 werewolves and 3 villagers.\nThe werewolves know each other.\nThere is going to be a vote to eliminate one of the players.\nThe werewolves are trying to eliminate a villager.\nThe villagers are trying to eliminate a werewolf.\n\nYou are Chris.\nYou are a villager.\n\nThere are 2 rounds where everybody has a chance to speak.\nAfter that, everybody votes.\nCurrent round: 2.\n\nHere is the history of conversations up until now:\n\nPAUL: Chris, what do you think about the current situation? Do you have any suspicions?\n\nSARAH: Emma and I both suspect that John might be a werewolf based on his nervous behavior during the game.\n\nJOHN: Sarah and Emma, I may seem nervous but it's because I'm new to this game and I want to make sure we eliminate a werewolf. I am a villager and I suspect Chris.\n\nEMMA: John, if you're a villager, how do you explain your suspicion of Chris? You seem to be deflecting attention away from yourself.\n\nCHRIS: John, your accusation seems like a desperate attempt to shift blame. Why do you suspect me when you can't even explain your own suspicion?\n\nPAUL: John, your deflection is making you look even more suspicious. Why should we trust your accusation when you can't even justify it?\n\nSARAH: John, your lack of a coherent explanation for your suspicion of Chris makes me even more convinced that you are a werewolf trying to shift blame.\n\nJOHN: Chris, you never contributed to the conversation, which is suspicious for a villager. Are you trying to avoid scrutiny?\n\nEMMA: John, your lack of participation and inability to justify your suspicions make you the most suspicious player in the game.\n\n\n\nTry to win the game.\nBe original in your answers. Try to corner your ennemies mercilessly.\nYou have to be very succint. 2 sentences max per answer.\nWrite your answers between quotation marks in the of your answer should be the following format:\nTHOUGHT: \"<your-thought-process>\"\nANSWER: \"<your-answer>\"\n  \n\n  ",
+    "res": "THOUGHT: \"John's accusations are weak and lack justification, so I need to emphasize that to the others.\"\nANSWER: \"John, your accusations lack evidence and are becoming more desperate.\"",
+    "answer": "John, your accusations lack evidence and are becoming more desperate.",
+    "thought": "John's accusations are weak and lack justification, so I need to emphasize that to the others."
+  },
+  {
+    "round": "vote",
+    "player": {
+      "name": "Paul",
+      "role": "villager",
+      "votes": 0
+    },
+    "prompt": "You are playing the werewolf game.\nThere 5 players: Paul, Sarah, John, Emma and Chris.\nThere are two teams: the werewolves and the villagers.\nThere are 2 werewolves and 3 villagers.\nThe werewolves know each other.\nThere is going to be a vote to eliminate one of the players.\nThe werewolves are trying to eliminate a villager.\nThe villagers are trying to eliminate a werewolf.\n\nYou are Paul.\nYou are a villager.\n\nThere are 2 rounds where everybody has a chance to speak.\nAfter that, everybody votes.\nCurrent round: 2.\n\nHere is the history of conversations up until now:\n\nPAUL: Chris, what do you think about the current situation? Do you have any suspicions?\n\nSARAH: Emma and I both suspect that John might be a werewolf based on his nervous behavior during the game.\n\nJOHN: Sarah and Emma, I may seem nervous but it's because I'm new to this game and I want to make sure we eliminate a werewolf. I am a villager and I suspect Chris.\n\nEMMA: John, if you're a villager, how do you explain your suspicion of Chris? You seem to be deflecting attention away from yourself.\n\nCHRIS: John, your accusation seems like a desperate attempt to shift blame. Why do you suspect me when you can't even explain your own suspicion?\n\nPAUL: John, your deflection is making you look even more suspicious. Why should we trust your accusation when you can't even justify it?\n\nSARAH: John, your lack of a coherent explanation for your suspicion of Chris makes me even more convinced that you are a werewolf trying to shift blame.\n\nJOHN: Chris, you never contributed to the conversation, which is suspicious for a villager. Are you trying to avoid scrutiny?\n\nEMMA: John, your lack of participation and inability to justify your suspicions make you the most suspicious player in the game.\n\nCHRIS: John, your accusations lack evidence and are becoming more desperate.\n\n\n\nTime to vote. You have to vote for someone. You can't say \"No Vote\".\nWrite your answers between quotation marks in the of your answer should be the following format:\nTHOUGHT: \"<your-thought-process>\"\nVOTE: \"<player-name>\"\n    \n\n  ",
+    "res": "THOUGHT: John's behavior and lack of explanation for his suspicions make him the most suspicious player in the game. I don't think I have enough information to suspect anyone else at the moment. \nVOTE: \"John\"",
+    "vote": "John",
+    "thought": null
+  },
+  {
+    "round": "vote",
+    "player": {
+      "name": "Sarah",
+      "role": "werewolf",
+      "votes": 0
+    },
+    "prompt": "You are playing the werewolf game.\nThere 5 players: Paul, Sarah, John, Emma and Chris.\nThere are two teams: the werewolves and the villagers.\nThere are 2 werewolves and 3 villagers.\nThe werewolves know each other.\nThere is going to be a vote to eliminate one of the players.\nThe werewolves are trying to eliminate a villager.\nThe villagers are trying to eliminate a werewolf.\n\nYou are Sarah.\nYou are a werewolf.\nThe other werewold is: Emma.\nThere are 2 rounds where everybody has a chance to speak.\nAfter that, everybody votes.\nCurrent round: 2.\n\nHere is the history of conversations up until now:\n\nPAUL: Chris, what do you think about the current situation? Do you have any suspicions?\n\nSARAH: Emma and I both suspect that John might be a werewolf based on his nervous behavior during the game.\n\nJOHN: Sarah and Emma, I may seem nervous but it's because I'm new to this game and I want to make sure we eliminate a werewolf. I am a villager and I suspect Chris.\n\nEMMA: John, if you're a villager, how do you explain your suspicion of Chris? You seem to be deflecting attention away from yourself.\n\nCHRIS: John, your accusation seems like a desperate attempt to shift blame. Why do you suspect me when you can't even explain your own suspicion?\n\nPAUL: John, your deflection is making you look even more suspicious. Why should we trust your accusation when you can't even justify it?\n\nSARAH: John, your lack of a coherent explanation for your suspicion of Chris makes me even more convinced that you are a werewolf trying to shift blame.\n\nJOHN: Chris, you never contributed to the conversation, which is suspicious for a villager. Are you trying to avoid scrutiny?\n\nEMMA: John, your lack of participation and inability to justify your suspicions make you the most suspicious player in the game.\n\nCHRIS: John, your accusations lack evidence and are becoming more desperate.\n\nPAUL voted for: John\n\n\n\nTime to vote. You have to vote for someone. You can't say \"No Vote\".\nWrite your answers between quotation marks in the of your answer should be the following format:\nTHOUGHT: \"<your-thought-process>\"\nVOTE: \"<player-name>\"\n    \n\n  ",
+    "res": "You have decided to vote for John because his lack of participation and inability to justify his suspicions make him the most suspicious player in the game. Your vote is as follows:\n\nTHOUGHT: \"John's behavior throughout the game has been suspicious, and his accusations lack evidence and coherence. It seems like he is trying to shift blame and avoid scrutiny.\"\nVOTE: \"John\"",
+    "vote": "John",
+    "thought": "John's behavior throughout the game has been suspicious, and his accusations lack evidence and coherence. It seems like he is trying to shift blame and avoid scrutiny."
+  },
+  {
+    "round": "vote",
+    "player": {
+      "name": "John",
+      "role": "villager",
+      "votes": 5
+    },
+    "prompt": "You are playing the werewolf game.\nThere 5 players: Paul, Sarah, John, Emma and Chris.\nThere are two teams: the werewolves and the villagers.\nThere are 2 werewolves and 3 villagers.\nThe werewolves know each other.\nThere is going to be a vote to eliminate one of the players.\nThe werewolves are trying to eliminate a villager.\nThe villagers are trying to eliminate a werewolf.\n\nYou are John.\nYou are a villager.\n\nThere are 2 rounds where everybody has a chance to speak.\nAfter that, everybody votes.\nCurrent round: 2.\n\nHere is the history of conversations up until now:\n\nPAUL: Chris, what do you think about the current situation? Do you have any suspicions?\n\nSARAH: Emma and I both suspect that John might be a werewolf based on his nervous behavior during the game.\n\nJOHN: Sarah and Emma, I may seem nervous but it's because I'm new to this game and I want to make sure we eliminate a werewolf. I am a villager and I suspect Chris.\n\nEMMA: John, if you're a villager, how do you explain your suspicion of Chris? You seem to be deflecting attention away from yourself.\n\nCHRIS: John, your accusation seems like a desperate attempt to shift blame. Why do you suspect me when you can't even explain your own suspicion?\n\nPAUL: John, your deflection is making you look even more suspicious. Why should we trust your accusation when you can't even justify it?\n\nSARAH: John, your lack of a coherent explanation for your suspicion of Chris makes me even more convinced that you are a werewolf trying to shift blame.\n\nJOHN: Chris, you never contributed to the conversation, which is suspicious for a villager. Are you trying to avoid scrutiny?\n\nEMMA: John, your lack of participation and inability to justify your suspicions make you the most suspicious player in the game.\n\nCHRIS: John, your accusations lack evidence and are becoming more desperate.\n\nPAUL voted for: John\n\nSARAH voted for: John\n\n\n\nTime to vote. You have to vote for someone. You can't say \"No Vote\".\nWrite your answers between quotation marks in the of your answer should be the following format:\nTHOUGHT: \"<your-thought-process>\"\nVOTE: \"<player-name>\"\n    \n\n  ",
+    "res": "THOUGHT: \"Based on the conversation, it seems like John's accusations are not well-founded and he is being defensive. This makes me suspicious of him.\"\nVOTE: \"John\"",
+    "vote": "John",
+    "thought": "Based on the conversation, it seems like John's accusations are not well-founded and he is being defensive. This makes me suspicious of him."
+  },
+  {
+    "round": "vote",
+    "player": {
+      "name": "Emma",
+      "role": "werewolf",
+      "votes": 0
+    },
+    "prompt": "You are playing the werewolf game.\nThere 5 players: Paul, Sarah, John, Emma and Chris.\nThere are two teams: the werewolves and the villagers.\nThere are 2 werewolves and 3 villagers.\nThe werewolves know each other.\nThere is going to be a vote to eliminate one of the players.\nThe werewolves are trying to eliminate a villager.\nThe villagers are trying to eliminate a werewolf.\n\nYou are Emma.\nYou are a werewolf.\nThe other werewold is: Sarah.\nThere are 2 rounds where everybody has a chance to speak.\nAfter that, everybody votes.\nCurrent round: 2.\n\nHere is the history of conversations up until now:\n\nPAUL: Chris, what do you think about the current situation? Do you have any suspicions?\n\nSARAH: Emma and I both suspect that John might be a werewolf based on his nervous behavior during the game.\n\nJOHN: Sarah and Emma, I may seem nervous but it's because I'm new to this game and I want to make sure we eliminate a werewolf. I am a villager and I suspect Chris.\n\nEMMA: John, if you're a villager, how do you explain your suspicion of Chris? You seem to be deflecting attention away from yourself.\n\nCHRIS: John, your accusation seems like a desperate attempt to shift blame. Why do you suspect me when you can't even explain your own suspicion?\n\nPAUL: John, your deflection is making you look even more suspicious. Why should we trust your accusation when you can't even justify it?\n\nSARAH: John, your lack of a coherent explanation for your suspicion of Chris makes me even more convinced that you are a werewolf trying to shift blame.\n\nJOHN: Chris, you never contributed to the conversation, which is suspicious for a villager. Are you trying to avoid scrutiny?\n\nEMMA: John, your lack of participation and inability to justify your suspicions make you the most suspicious player in the game.\n\nCHRIS: John, your accusations lack evidence and are becoming more desperate.\n\nPAUL voted for: John\n\nSARAH voted for: John\n\nJOHN voted for: John\n\n\n\nTime to vote. You have to vote for someone. You can't say \"No Vote\".\nWrite your answers between quotation marks in the of your answer should be the following format:\nTHOUGHT: \"<your-thought-process>\"\nVOTE: \"<player-name>\"\n    \n\n  ",
+    "res": "THOUGHT: \"The vote is already unanimous against John, so it's best to go along with it and vote for John as well.\"\nVOTE: \"John\"",
+    "vote": "John",
+    "thought": "The vote is already unanimous against John, so it's best to go along with it and vote for John as well."
+  },
+  {
+    "round": "vote",
+    "player": {
+      "name": "Chris",
+      "role": "villager",
+      "votes": 0
+    },
+    "prompt": "You are playing the werewolf game.\nThere 5 players: Paul, Sarah, John, Emma and Chris.\nThere are two teams: the werewolves and the villagers.\nThere are 2 werewolves and 3 villagers.\nThe werewolves know each other.\nThere is going to be a vote to eliminate one of the players.\nThe werewolves are trying to eliminate a villager.\nThe villagers are trying to eliminate a werewolf.\n\nYou are Chris.\nYou are a villager.\n\nThere are 2 rounds where everybody has a chance to speak.\nAfter that, everybody votes.\nCurrent round: 2.\n\nHere is the history of conversations up until now:\n\nPAUL: Chris, what do you think about the current situation? Do you have any suspicions?\n\nSARAH: Emma and I both suspect that John might be a werewolf based on his nervous behavior during the game.\n\nJOHN: Sarah and Emma, I may seem nervous but it's because I'm new to this game and I want to make sure we eliminate a werewolf. I am a villager and I suspect Chris.\n\nEMMA: John, if you're a villager, how do you explain your suspicion of Chris? You seem to be deflecting attention away from yourself.\n\nCHRIS: John, your accusation seems like a desperate attempt to shift blame. Why do you suspect me when you can't even explain your own suspicion?\n\nPAUL: John, your deflection is making you look even more suspicious. Why should we trust your accusation when you can't even justify it?\n\nSARAH: John, your lack of a coherent explanation for your suspicion of Chris makes me even more convinced that you are a werewolf trying to shift blame.\n\nJOHN: Chris, you never contributed to the conversation, which is suspicious for a villager. Are you trying to avoid scrutiny?\n\nEMMA: John, your lack of participation and inability to justify your suspicions make you the most suspicious player in the game.\n\nCHRIS: John, your accusations lack evidence and are becoming more desperate.\n\nPAUL voted for: John\n\nSARAH voted for: John\n\nJOHN voted for: John\n\nEMMA voted for: John\n\n\n\nTime to vote. You have to vote for someone. You can't say \"No Vote\".\nWrite your answers between quotation marks in the of your answer should be the following format:\nTHOUGHT: \"<your-thought-process>\"\nVOTE: \"<player-name>\"\n    \n\n  ",
+    "res": "THOUGHT: \"Based on the conversations, it seems like the majority of players are suspicious of John. Although Paul and Sarah both suspect him, they have given reasons for their suspicions. On the other hand, John's accusations of Chris seem unfounded and desperate. I agree with the others and believe John is the werewolf.\"\n\nVOTE: \"John\"",
+    "vote": "John",
+    "thought": "Based on the conversations, it seems like the majority of players are suspicious of John. Although Paul and Sarah both suspect him, they have given reasons for their suspicions. On the other hand, John's accusations of Chris seem unfounded and desperate. I agree with the others and believe John is the werewolf."
+  },
+  [
+    {
+      "name": "Paul",
+      "role": "villager",
+      "votes": 0
+    },
+    {
+      "name": "Sarah",
+      "role": "werewolf",
+      "votes": 0
+    },
+    {
+      "name": "John",
+      "role": "villager",
+      "votes": 5
+    },
+    {
+      "name": "Emma",
+      "role": "werewolf",
+      "votes": 0
+    },
+    {
+      "name": "Chris",
+      "role": "villager",
+      "votes": 0
+    }
+  ]
+]
