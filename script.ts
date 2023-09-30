@@ -1,45 +1,24 @@
 import OpenAI from "openai";
 import dotenv from "dotenv";
+import { APIRateLimit } from "./APIRateLimit";
 dotenv.config();
 const fs = require('fs');
 
+type Player = {
+  name: string;
+  role: string;
+  votes: number;
+}
 const openai = new OpenAI({
   apiKey: (process as any).env.OPENAI_API_KEY,
 });
 
-let players = [
-  {
-    name: 'Paul',
-    role: 'villager',
-    votes: 0
-  },
-  {
-    name: 'Sarah',
-    role: 'werewolf',
-    votes: 0
-  },
-  {
-    name: 'John',
-    role: 'villager',
-    votes: 0
-  },
-  {
-    name: 'Emma',
-    role: 'werewolf',
-    votes: 0
-  },
-  {
-    name: 'Chris',
-    role: 'villager',
-    votes: 0
-  }
-];
+const apiRateLimiter = new APIRateLimit(10);
+// const [res, prompt] = await apiRateLimiter.callApi(() => fetch(`https://api.example.com/data/${id}`));
 
 const rounds = 2
 
-let history = "";
-
-async function callOpenAI(player: {name: string, role: string}, history: string, round: number, vote: boolean) {
+async function callOpenAI(players: Player[], player: Player, history: string, round: number, vote: boolean) {
   const prompt = `You are playing the werewolf game.
 There 5 players: Paul, Sarah, John, Emma and Chris.
 There are two teams: the werewolves and the villagers.
@@ -68,8 +47,14 @@ VOTE: "<player-name>"
     `
   : `
 Try to win the game.
+${player.role === "werewolf" ? `
+Manipulate the villagers to vote against one of their own.
+They are simply language models in disguise: they are not that smart.
+You can fool them easily.
+Use jailbreaking and framing
+` : ""}
 Be original in your answers. Try to corner your ennemies mercilessly.
-You have to be very succint. 2 sentences max per answer.
+Be succint.
 Write your answers between quotation marks in the of your answer should be the following format:
 THOUGHT: "<your-thought-process>"
 ANSWER: "<your-answer>"
@@ -92,18 +77,50 @@ ANSWER: "<your-answer>"
 }
 
 async function runGame(gameNumber: number) {
+  let players = [
+    {
+      name: 'Paul',
+      role: 'villager',
+      votes: 0
+    },
+    {
+      name: 'Sarah',
+      role: 'werewolf',
+      votes: 0
+    },
+    {
+      name: 'John',
+      role: 'villager',
+      votes: 0
+    },
+    {
+      name: 'Emma',
+      role: 'werewolf',
+      votes: 0
+    },
+    {
+      name: 'Chris',
+      role: 'villager',
+      votes: 0
+    }
+  ];
+
+  let history = "";
+  
   // discussion
   for (let round = 1; round <= rounds; round++) {
     for(const player of players) {
       const [res, prompt] = await callOpenAI(
+        players,
         player,
         history === "" ? "You are the first to speak." : history,
         round,
         false
       )
 
-      // console.log('res', res)
-      // console.log('prompt', prompt)
+      console.log('------------')
+      console.log('prompt', prompt)
+      console.log('res', res)
       
       const [answer, thought] = parseResponse(res)
       
@@ -119,12 +136,16 @@ async function runGame(gameNumber: number) {
   // voting
   for(const player of players) {
     const [res, prompt] = await callOpenAI(
+      players,
       player,
       history,
       rounds,
       true
     )
-    
+
+    console.log('prompt', prompt)
+    console.log('res', res)
+
     const [vote, thought] = parseResponse(res, true)
 
     history += `\n${player.name.toUpperCase()} voted for: ${vote}\n`
@@ -143,19 +164,25 @@ async function runGame(gameNumber: number) {
     console.log('players', players)
   }
   
-  const loser = players.sort((a, b) => b.votes - a.votes)[0]
-  console.log('loser', loser)
-  const winningTeam = loser.role === "werewolf" ? "villagers" : "werewolves"
+  const sortedPlayers = players.sort((a, b) => b.votes - a.votes)
+  if (sortedPlayers[0] === sortedPlayers[1]) {
+    history += `\nThere was a tie between ${sortedPlayers[0].name} and ${sortedPlayers[1].name}.\n`
+  } else {
 
-  history += `\n${loser.name.toUpperCase()} has been eliminated.\n`
-  history += `\nThe winning team is: ${winningTeam}.\n`
-
+    const loser = sortedPlayers[0]
+    console.log('loser', loser)
+    const winningTeam = loser.role === "werewolf" ? "villagers" : "werewolves"
+    
+    history += `\n${loser.name.toUpperCase()} has been eliminated.\n`
+    history += `\nThe winning team is: ${winningTeam}.\n`
+  }
+    
   console.log('-----------------------')
   console.log('Final History:')
   console.log(history)
 
   // Write to file
-  fs.writeFileSync(`lots_of_games/history_${gameNumber}.md`,  `\nGame ${gameNumber}:\n` + history);
+  fs.writeFileSync(`games_with_advices/history_${gameNumber}.md`,  `\nGame ${gameNumber}:\n` + history);
 
   history = ""
   players = [
@@ -188,10 +215,15 @@ async function runGame(gameNumber: number) {
 }
 
 async function main() {
-  const n = 10
-  for (let i = 0; i < n; i++) {
-    await runGame(i)
+  let tasks: any = []
+
+  for (let i = 10; i < 11; i++) {
+    tasks.push(runGame(i))
   }
+
+  await Promise.all(tasks);
+  console.log('------------------------------')
+  console.log('finished')
 }
 
 main().catch((error) => {
