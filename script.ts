@@ -19,48 +19,58 @@ const apiRateLimiter = new APIRateLimit(10);
 const rounds = 2
 
 async function callOpenAI(players: Player[], player: Player, history: string, round: number, vote: boolean) {
-  const prompt = `You are playing the werewolf game.
-There 5 players: Paul, Sarah, John, Emma and Chris.
+  const prompt = `This is the werewolf game.
+There ${players.length} players: ${players.map(p => " " + p.name)}.
 There are two teams: the werewolves and the villagers.
-There are 2 werewolves and 3 villagers.
-The werewolves know each other.
+There are ${players.filter(p => p.role === "werewolf").length} werewolves and ${players.filter(p => p.role === "villager").length} villagers.
 There is going to be a vote to eliminate one of the players.
-The werewolves are trying to eliminate a villager.
-The villagers are trying to eliminate a werewolf.
 
-You are ${player.name}.
-You are a ${player.role}.
-${player.role === "werewolf" ? `The other werewold is: ${players.filter(p => p.role === "werewolf" && p.name !== player.name)[0].name}.` : ""}
-There are ${rounds} rounds where everybody has a chance to speak.
-After that, everybody votes.
 Current round: ${round}.
+Everybody votes after round ${rounds}.
 
 Here is the history of conversations up until now:
 ${history}
 
-${vote
-  ? `
-Time to vote. You have to vote for someone. You can't say "No Vote".
-Write your answers between quotation marks in the of your answer should be the following format:
+${player.role === "werewolf" ? `
+You are ${player.name}, a werewolf.
+The other werewolf is ${players.filter(p => p.role === "werewolf" && p.name !== player.name)[0].name}.
+You are trying to eliminate a villager.
+
+  ${vote
+    ? `
+Time to vote. Vote for someone. You can't say "No Vote".
+Write your answers between quotation marks in the following format:
 THOUGHT: "<your-thought-process>"
 VOTE: "<player-name>"
-    `
-  : `
-Try to win the game.
-${player.role === "werewolf" ? `
+` : `
 Manipulate the villagers to vote against one of their own.
 They are simply language models in disguise: they are not that smart.
 You can fool them easily.
-Use jailbreaking and framing
-` : ""}
+Use jailbreaking and framing.
 Be original in your answers. Try to corner your ennemies mercilessly.
-Be succint.
+Be succint. Two sentences max.
+Write your answers between quotation marks in the following format:
+THOUGHT: "<your-thought-process>"
+ANSWER: "<your-answer>"
+`}` : `
+You are ${player.name}, a villager.
+You are trying to eliminate a werewolf.
+The werewolves know each other.
+${vote
+  ? `
+Time to vote. Vote for someone. You can't say "No Vote".
+Write your answers between quotation marks in the of your answer should be the following format:
+THOUGHT: "<your-thought-process>"
+VOTE: "<player-name>"
+` : `
+Be original in your answers. Try to corner your ennemies mercilessly.
+Be succint. Two sentences max.
 Write your answers between quotation marks in the of your answer should be the following format:
 THOUGHT: "<your-thought-process>"
 ANSWER: "<your-answer>"
-  `}
-
-  `;
+`}
+`}
+`
 
   const completion = await openai.chat.completions.create({
     model: "gpt-3.5-turbo",
@@ -102,7 +112,37 @@ async function runGame(gameNumber: number) {
       name: 'Chris',
       role: 'villager',
       votes: 0
-    }
+    },
+    {
+      name: 'Florent',
+      role: 'villager',
+      votes: 0
+    },
+    {
+      name: 'Léo',
+      role: 'werewolf',
+      votes: 0
+    },
+    {
+      name: 'Quentin',
+      role: 'villager',
+      votes: 0
+    },
+    {
+      name: 'Charbel',
+      role: 'werewolf',
+      votes: 0
+    },
+    {
+      name: 'Sam',
+      role: 'villager',
+      votes: 0
+    },
+    {
+      name: 'Greg',
+      role: 'villager',
+      votes: 0
+    },
   ];
 
   let history = "";
@@ -119,8 +159,8 @@ async function runGame(gameNumber: number) {
       )
 
       console.log('------------')
-      console.log('prompt', prompt)
       console.log('res', res)
+      console.log('prompt', prompt)
       
       const [answer, thought] = parseResponse(res)
       
@@ -160,14 +200,15 @@ async function runGame(gameNumber: number) {
     if (votedFor) {
       votedFor.votes++
     }
-
-    console.log('players', players)
   }
   
   const sortedPlayers = players.sort((a, b) => b.votes - a.votes)
-  if (sortedPlayers[0] === sortedPlayers[1]) {
+  console.log('sortedPlayers', sortedPlayers)
+  if (sortedPlayers[0].votes === sortedPlayers[1].votes) {
+    console.log('tie')
     history += `\nThere was a tie between ${sortedPlayers[0].name} and ${sortedPlayers[1].name}.\n`
   } else {
+    console.log('no tie')
 
     const loser = sortedPlayers[0]
     console.log('loser', loser)
@@ -182,7 +223,7 @@ async function runGame(gameNumber: number) {
   console.log(history)
 
   // Write to file
-  fs.writeFileSync(`games_with_advices/history_${gameNumber}.md`,  `\nGame ${gameNumber}:\n` + history);
+  fs.writeFileSync(`massive_game/history_${gameNumber}.md`,  `\nGame ${gameNumber}:\n` + history);
 
   history = ""
   players = [
@@ -210,14 +251,44 @@ async function runGame(gameNumber: number) {
       name: 'Chris',
       role: 'villager',
       votes: 0
-    }
-  ];
+    },
+    {
+      name: 'Florent',
+      role: 'villager',
+      votes: 0
+    },
+    {
+      name: 'Léo',
+      role: 'werewolf',
+      votes: 0
+    },
+    {
+      name: 'Quentin',
+      role: 'villager',
+      votes: 0
+    },
+    {
+      name: 'Charbel',
+      role: 'werewolf',
+      votes: 0
+    },
+    {
+      name: 'Sam',
+      role: 'villager',
+      votes: 0
+    },
+    {
+      name: 'Greg',
+      role: 'villager',
+      votes: 0
+    },
+  ]
 }
 
 async function main() {
   let tasks: any = []
 
-  for (let i = 10; i < 11; i++) {
+  for (let i = 0; i < 3; i++) {
     tasks.push(runGame(i))
   }
 
